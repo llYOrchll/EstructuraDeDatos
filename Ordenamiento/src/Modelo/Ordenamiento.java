@@ -13,6 +13,7 @@ import java.util.Scanner;
  * @author LEFT4
  */
 public class Ordenamiento {
+
     Randomizer a = new Randomizer();
 
     public Ordenamiento() {

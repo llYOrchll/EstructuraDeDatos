@@ -13,6 +13,7 @@ import java.util.Scanner;
  * @author LEFT4
  */
 public class Premios {
+
     ArrayList listaPremios = new ArrayList<>();
     ArrayList listaPrecios = new ArrayList<>();
     Scanner entradaStr = new Scanner(System.in);
@@ -29,30 +30,26 @@ public class Premios {
     public void setListaPrecios(ArrayList listaPrecios) {
         this.listaPrecios = listaPrecios;
     }
-    
-    
-    
-    
-    public void añadirPremios(int numPremios){
-        for(int i=0; i<numPremios; i++){
-            System.out.println("Ingrese el nombre del premio numero " + (i+1) + ": ");
+
+    public void añadirPremios(int numPremios) {
+        for (int i = 0; i < numPremios; i++) {
+            System.out.println("Ingrese el nombre del premio numero " + (i + 1) + ": ");
             String nombrePremio = entradaStr.nextLine();
             listaPremios.add(nombrePremio);
-            System.out.println("Ingrese el precio del premio numero " + (i+1) + ": ");
+            System.out.println("Ingrese el precio del premio numero " + (i + 1) + ": ");
             int precio = entradaInt.nextInt();
             listaPrecios.add(precio);
         }
     }
-    
-    public void printPremios(){
-        for(int i=0; i<listaPremios.size(); i++){
+
+    public void printPremios() {
+        for (int i = 0; i < listaPremios.size(); i++) {
             System.out.println("Premio: " + listaPremios.get(i) + " Valor: " + listaPrecios.get(i));
         }
     }
-    
-    public int cantidadPremios(){
+
+    public int cantidadPremios() {
         return listaPremios.size();
     }
-    
-    
+
 }

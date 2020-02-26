@@ -13,11 +13,13 @@ import java.util.Scanner;
  * @author LEFT4
  */
 public class Equipos {
+
     ArrayList listaEquipos = new ArrayList<>();
     Scanner entradaStr = new Scanner(System.in);
-    public void añadirEquipos(int numEquipos){
-        for(int i=0; i<numEquipos; i++){
-            System.out.println("Ingrese el nombre del equipo " + i+1 + ": ");
+
+    public void añadirEquipos(int numEquipos) {
+        for (int i = 0; i < numEquipos; i++) {
+            System.out.println("Ingrese el nombre del equipo " + i + 1 + ": ");
             String nombreEquipo = entradaStr.nextLine();
             listaEquipos.add(nombreEquipo);
         }

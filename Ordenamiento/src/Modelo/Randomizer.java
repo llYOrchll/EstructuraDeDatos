@@ -13,25 +13,26 @@ import java.util.Random;
  * @author LEFT4
  */
 public class Randomizer {
+
     private ArrayList<Float> tiempos;
-    
-    public Randomizer(){
+
+    public Randomizer() {
         tiempos = new ArrayList<>();
     }
-    
-    public void listaVacia(int num){
-        for(int i=0; i<num; i++){
+
+    public void listaVacia(int num) {
+        for (int i = 0; i < num; i++) {
             tiempos.add(Float.NaN);
         }
     }
-    
-    public void generarTiempos(){
+
+    public void generarTiempos() {
         Random numAleatorio = new Random();
-        for(int i=0; i< tiempos.size();i++){
+        for (int i = 0; i < tiempos.size(); i++) {
             tiempos.set(i, numAleatorio.nextFloat());
         }
         System.out.println("Tiempos: " + tiempos);
-        
+
     }
-    
+
 }
